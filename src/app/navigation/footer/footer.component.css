@@ -1,0 +1,30 @@
+.footer {
+    background-color: #428fe8;
+    bottom: 0;
+    position: fixed;
+    min-width: 100%;
+    font-size: 15px;
+  }
+
+  .text {
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    color: #333;
+    font-weight:lighter;
+  }
+
+  .feed {
+    margin-left: 800px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    color: white;
+    text-decoration-line: none;
+    border-bottom: 1px dotted white;
+    font-weight:lighter;
+  }
+
+  .feed:hover {
+    text-decoration-line: underline;
+  }

@@ -1,0 +1,20 @@
+.bg-img {
+    /* The image used */
+    background-image: url("https://www.cyberseek.org/images/bg_image_new.jpg");
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 500px;
+    background-size: cover;
+    background-position: top left;
+    background-color: #090F1A;
+    background-repeat: no-repeat;
+  }
+  body {
+    font-family: "Roboto", Arial, Helvetica;
+    height: 100%;
+    font-weight: 400;
+    background-color: transparent;
+    color: #717182;
+  }
