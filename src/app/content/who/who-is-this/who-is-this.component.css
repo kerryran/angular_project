@@ -1,0 +1,63 @@
+.whoIsThis {
+    background-color: #f5f7f9;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.header {
+    font-size: 21px;
+    margin-top: 3%;
+    color: #505054;
+}
+
+.header-text {
+    font-size:medium;
+    margin-left: 28%;
+    margin-right: 28%;
+   
+}
+
+.category {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 5%;
+    margin-left: 5%;
+    color:#505054;
+}
+
+.categoryCont {
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: .5%;
+    margin-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 27%;
+    border-radius: 2%;
+}
+.questions {
+    color: black;
+    font-size: 15px;
+}
+
+.pic {
+    object-fit: contain;
+    width: 50%;
+    height: 60%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+.btn {
+    background-color:  #50a9de;
+    border-color:  #50a9de;
+    margin-left: 20%;
+}
+
+.small {
+    color: black;
+    font-size: small;
+}
