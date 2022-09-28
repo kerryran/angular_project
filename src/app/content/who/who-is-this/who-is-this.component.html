@@ -6,37 +6,15 @@
         policy makers, and other stakeholders as they answer the following questions:
       </p>
 
-      <!--Who is this for cards-->
-      <div class="d-flex flex-row justify-content-center height"> 
-      <app-three-point-card class = "card_separator" img = "/assets/employment.svg" title = "Employers" 
-      text1 = "How large is the cybersecurity workforce in my region? How does that compare to other locations?"
-      text2 = "How much does it cost to hire cybersecurity workers in my region?"
-      text3 = "How hard will it be to fill cybersecurity positions in my region? Do I need to source cybersecurity workers from other regions?">Loading...</app-three-point-card>
+      <div class="d-flex flex-column justify-content-center height"> 
+        <div class = "d-flex flex-row" *ngFor = "let text of who_thises"> 
+        <app-three-point-card  class = "card_separator" img = {{text.img}} title = {{text.title}} [text_items] = "text.text_items">
+        Loading...
+        </app-three-point-card>
+        </div>
+      
+        <app-pdf-card class = "card_separator">Loading...</app-pdf-card>
 
-      <app-five-point-card class = "card_separator" img = "/assets/educators.svg" title = "Educators & Career Counselors" 
-      text1 = "Should I offer a cybersecurity training program for my students?"
-      text2 = "What skills should we teach students to prepare them for careers in cybersecurity? What courses should they take?"
-      text3 = "What education levels do employers require for cybersecurity workers in my community?"
-      text4 = "What entry-level jobs can students target to begin their careers in cybersecurity?"
-      text5 = "What cybersecurity certifications are most in demand in my community? Are there enough certification holders to meet demand? Should I prepare students for these certifications?">Loading...</app-five-point-card>
-
-      <app-three-point-card class = "card_separator" img = "/assets/students.svg" title = "Students" 
-      text1 = "Is there strong demand for cybersecurity jobs in my region?"
-      text2 = "What skills and educational credentials do I need to enter a career in cybersecurity?"
-      text3 = "How much can I make if I work in cybersecurity?">Loading...</app-three-point-card>
       </div>
-      <div class="d-flex flex-row justify-content-center height2"> 
-      <app-three-point-card class = "card_separator" img = "/assets/search-1.svg" title = "Job Seekers & Current Workers" 
-      text1 = "How in-demand are cybersecurity jobs in my community?"
-      text2 = "What roles can I target to start my career in cybersecurity?"
-      text3 = "How can I transition between cybersecurity roles and advance my career?">Loading...</app-three-point-card>
-
-      <app-three-point-card class = "card_separator" img = "/assets/policy.svg" title = "Policy Makers" 
-      text1 = "How large is the cybersecurity workforce in my community? How does that compare to other locations?"
-      text2 = "How severe is the workforce shortage in my community?"
-      text3 = "What types of cybersecurity jobs are most demanded in my community?">Loading...</app-three-point-card>
-
-      <app-pdf-card class = "card_separator">Loading...</app-pdf-card>
   </div>
-</div>
 </div>

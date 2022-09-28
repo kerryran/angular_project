@@ -12,7 +12,8 @@ export const who_this_card = [
     text_items: ['Should I offer a cybersecurity training program for my students?',
     'What skills should we teach students to prepare them for careers in cybersecurity? What courses should they take?', 
     "What education levels do employers require for cybersecurity workers in my community?", "What entry-level jobs can students target to begin their careers in cybersecurity?",
-    "What cybersecurity certifications are most in demand in my community? Are there enough certification holders to meet demand? Should I prepare students for these certifications?"]
+    "What cybersecurity certifications are most in demand in my community? Are there enough certification holders to meet demand? Should I prepare students for these certifications?"
+    ]
  
  },
  {
@@ -31,8 +32,8 @@ export const who_this_card = [
     "How can I transition between cybersecurity roles and advance my career?"]
  },
  {
-    img: "",
-    title: "",
+    img: "/assets/policy.svg",
+    title: "Policy Makers",
     text_items: ["How large is the cybersecurity workforce in my community? How does that compare to other locations?",
    "How severe is the workforce shortage in my community?",
     "What types of cybersecurity jobs are most demanded in my community?"]

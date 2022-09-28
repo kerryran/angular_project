@@ -1,12 +1,12 @@
 
     <div class="categoryCont shadow">
-      <p class="category"><img src={{img}} class="icon" alt="employers">
+      <p class="category"><img src={{img}} class="icon" alt="">
         {{title}}</p>
       <ul class="questions">
-        <li><span>{{text1}}</span></li>
-          <p>   </p>
-        <li><span>{{text2}}</span></li>
-             <p>   </p>
-        <li><span>{{text3}}</span></li>
+        <li *ngFor="let item of text_items; let i = index" [attr.data-index]="i">
+        {{item}}
+        <p>      </p>
+        </li>
       </ul>
     </div>
+  
