@@ -7,7 +7,7 @@
       </p>
 
       <div class="d-flex flex-row flex-wrap justify-content-center"> 
-        <div class = "" *ngFor = "let text of who_thises"> 
+        <div *ngFor = "let text of who_thises"> 
         <app-three-point-card  class = "d-flex card_separator" img = {{text.img}} title = {{text.title}} [text_items] = "text.text_items">
         Loading...
         </app-three-point-card>

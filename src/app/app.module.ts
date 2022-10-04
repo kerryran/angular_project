@@ -9,6 +9,12 @@ import { HackGapComponent } from './content/hack-gap/hack-gap/hack-gap.component
 import { WhoIsThisComponent } from './content/who/who-is-this/who-is-this.component';
 import { ThreePointCardComponent } from './content/3point_card/three-point-card/three-point-card.component';
 import { PdfCardComponent } from './content/pdf_card/pdf-card/pdf-card.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.component';
+import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.component';
+import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
+import { Dummy01LayoutComponent } from './layouts/dummy01-layout/dummy01-layout.component';
+
 
 @NgModule({
   declarations: [
@@ -19,10 +25,15 @@ import { PdfCardComponent } from './content/pdf_card/pdf-card/pdf-card.component
     HackGapComponent,
     WhoIsThisComponent,
     ThreePointCardComponent,
-    PdfCardComponent
+    PdfCardComponent,
+    HeatmapLayoutComponent,
+    PathwayLayoutComponent,
+    TrainingLayoutComponent,
+    Dummy01LayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

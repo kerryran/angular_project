@@ -1,6 +1,18 @@
-.container {
-    margin-top: 500px;
-    margin-bottom: 500px;
-    margin-left: 10px;
-    position: sticky;
+.about {
+    margin-top: 30vw;
+}
+
+.header {
+    font-size: x-large;
+    color: #505054;
+}
+
+.icon {
+    object-fit: contain;
+    width: 10%;
+    height: 10%;
+}
+
+.card_separator {
+    margin-right: 5%;
 }

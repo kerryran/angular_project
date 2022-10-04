@@ -1,71 +1,12 @@
-<div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="aboutQuote col-md-12"> To help close the cybersecurity skills gap, CyberSeek provides
-          detailed,
-          actionable data about supply and demand in the cybersecurity job market.
-        </div>
-      </div>
-      <div class="row tools">
-        <div class="col-md-6 col-lg-6">
-          <h2 class="text-left">Interactive Map</h2>
-          <a href="heatmap.html">
-            <div class="heatmapBtn">
-              <div class="imageCont">
-                <img class="toolsImg" src="assets/tool_07.png">
-              </div>
-              <p class="descr">A heat map of cybersecurity supply and demand</p>
+<div class = "about container-fluid">
+    <h1 class = "d-flex justify-content-center header">About this tool</h1>
+    <div class = "d-flex flex-row justify-content-center"> 
+        <div *ngFor = "let item of about">
+        <div class = "d-flex flex-column card_separator">
+            <img src = {{item.img}} class="icon" alt="">
+            <p>{{item.text}}</p>
             </div>
-          </a>
         </div>
-
-        <div class="col-md-6 col-lg-6">
-          <h2 class="text-left">Career Pathway</h2>
-          <a href="pathway.html">
-            <div class="pathwayBtn">
-              <div class="imageCont">
-                <img class="toolsImg" src="assets/tool_09.png">
-              </div>
-              <p class="descr">An interactive career pathway showing common roles within cybersecurity and transition
-                opportunities between them</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <h2 style="margin-top:1em;">About this tool</h2>
-      <p>
-
-      </p>
-      <div class="row">
-        <div class="aboutTxt col-md-4">
-          <div class="top-image">
-            <img width="33" height="33" src="assets/shield.svg" alt="Cybersecurity workers">
-          </div>
-          Cybersecurity workers protect our most important and private information, from bank accounts to sensitive
-          military communications. However, there is a dangerous shortage of cybersecurity workers in the United States
-          that puts our digital privacy and infrastructure at risk.<br><br>
-        </div>
-        <div class="aboutTxt col-md-4">
-          <div class="top-image">
-            <img width="33" height="33" src="assets/search.svg" alt="Cybersecurity workers">
-          </div>
-          <p>
-            From May 2021 through April 2022, there were 180,000 openings for Information Security Analysts, but only
-            141,000 workers currently employed in those positions - an annual talent shortfall of 39,000 workers for
-            cybersecurity's largest job.
-          </p>
-        </div>
-        <div class="aboutTxt col-md-4">
-          <div class="top-image">
-            <img width="33" height="33" src="assets/lock.svg" alt="Cybersecurity workers">
-          </div>
-          <p class="aboutTxt">
-          There are 534,548 additional openings requesting cybersecurity-related skills, and employers are struggling to
-          find workers who possess them. On average, cybersecurity roles take 21% longer to fill than other IT jobs.
-          </p>
-        </div>
-      </div>
-
     </div>
-  </div>
+</div>
+
