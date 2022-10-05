@@ -14,6 +14,8 @@ import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.
 import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.component';
 import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
 import { Dummy01LayoutComponent } from './layouts/dummy01-layout/dummy01-layout.component';
+import { HomeLayoutComponent } from './layouts/home-layout/home-layout/home-layout.component';
+import { SecondHeaderComponent } from './navigation/header/second-header/second-header.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { Dummy01LayoutComponent } from './layouts/dummy01-layout/dummy01-layout.
     HeatmapLayoutComponent,
     PathwayLayoutComponent,
     TrainingLayoutComponent,
-    Dummy01LayoutComponent
+    Dummy01LayoutComponent,
+    HomeLayoutComponent,
+    SecondHeaderComponent
   ],
   imports: [
     BrowserModule,
