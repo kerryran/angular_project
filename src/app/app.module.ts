@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.component';
 import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.component';
 import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
-import { Dummy01LayoutComponent } from './layouts/dummy01-layout/dummy01-layout.component';
+import { CertificationLayoutComponent } from './layouts/certification-layout/certification-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout/home-layout.component';
 import { SecondHeaderComponent } from './navigation/header/second-header/second-header.component';
 
@@ -31,7 +31,7 @@ import { SecondHeaderComponent } from './navigation/header/second-header/second-
     HeatmapLayoutComponent,
     PathwayLayoutComponent,
     TrainingLayoutComponent,
-    Dummy01LayoutComponent,
+    CertificationLayoutComponent,
     HomeLayoutComponent,
     SecondHeaderComponent
   ],

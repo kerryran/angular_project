@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.component';
 import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.component';
 import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
-import { Dummy01LayoutComponent } from './layouts/dummy01-layout/dummy01-layout.component';
+import { CertificationLayoutComponent } from './layouts/certification-layout/certification-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout/home-layout.component';
 
 const routes : Routes = [
@@ -13,7 +13,7 @@ const routes : Routes = [
   {path : 'heatmap', component: HeatmapLayoutComponent},
   {path: 'pathway', component: PathwayLayoutComponent},
   {path: 'training', component: TrainingLayoutComponent},
-  {path: 'dummy', component: Dummy01LayoutComponent},
+  {path: 'dummy', component: CertificationLayoutComponent},
 ];
 
 
