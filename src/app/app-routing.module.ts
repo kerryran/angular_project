@@ -5,7 +5,7 @@ import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.
 import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.component';
 import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
 import { CertificationLayoutComponent } from './layouts/certification-layout/certification-layout.component';
-import { HomeLayoutComponent } from './layouts/home-layout/home-layout/home-layout.component';
+import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 
 const routes : Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -13,7 +13,7 @@ const routes : Routes = [
   {path : 'heatmap', component: HeatmapLayoutComponent},
   {path: 'pathway', component: PathwayLayoutComponent},
   {path: 'training', component: TrainingLayoutComponent},
-  {path: 'dummy', component: CertificationLayoutComponent},
+  {path: 'certifications', component: CertificationLayoutComponent},
 ];
 
 
