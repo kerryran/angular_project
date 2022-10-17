@@ -3,15 +3,23 @@ body {
     margin-left: 12vw;
 }
 
-.circle1 {
-    border-radius: 100%;
-    background-color: #408AE1;
+.image {
+    width: 35%;
+    height: auto;
 }
 
-.circle2 {
-    background-color: #B871AD;
+.btn {
+    border: none;
+    margin-top: .3in;
+    font-size: small;
 }
 
-.circle3 {
-    background-color: #7FE2C6;
+.btn-secondary {
+    background-color: lightgrey;
+    color: black;
+}
+
+.buttons {
+    margin-right: 29rem;
+    margin-left: 29rem;
 }

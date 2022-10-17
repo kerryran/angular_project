@@ -1,5 +1,5 @@
 .card {
-    width: 12rem;
+    width: 18rem;
     border: none;
 }
 
@@ -11,5 +11,9 @@ h5 {
 
 p {
     text-align: right;
-    font-size: smaller;
+    font-size: x-small;
+}
+
+.image {
+    height: 16rem;
 }
