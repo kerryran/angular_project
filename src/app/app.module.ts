@@ -28,6 +28,8 @@ import { LinkCardComponent } from './layouts/home-layout/link-card/link-card.com
 import { PartnerCardComponent } from './layouts/home-layout/partner-card/partner-card.component';
 import { ImageCardComponent } from './layouts/home-layout/image-card/image-card.component';
 import { InfoHoverCardComponent } from './layouts/pathway-layout/content/info-hover-card/info-hover-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './lab6/user-info.component';
 
 
 @NgModule({
@@ -57,11 +59,13 @@ import { InfoHoverCardComponent } from './layouts/pathway-layout/content/info-ho
     LinkCardComponent,
     PartnerCardComponent,
     ImageCardComponent,
-    InfoHoverCardComponent
+    InfoHoverCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
