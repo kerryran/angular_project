@@ -12,6 +12,15 @@
 .card {
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 3rem;
     border: none;
     width: 35rem;
+}
+
+.card:hover {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    width: 35rem;
+    box-shadow: 10px 10px 5px 12px lightgrey;
 }
