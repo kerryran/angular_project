@@ -1,0 +1,27 @@
+.card {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.image {
+    width: 50rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    border: none;
+    margin-top: .3in;
+    font-size: small;
+}
+
+.btn-secondary {
+    background-color: lightgrey;
+    color: black;
+}
+
+.buttons {
+    margin-right: 18rem;
+    margin-left: 18rem;
+}

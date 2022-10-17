@@ -1,15 +1,15 @@
-.card{
+.card {
     width: 12rem;
     border: none;
 }
 
-h5{
+h5 {
     text-align: center;
-    font-size:small;
-    font-weight:bold;
+    font-size: small;
+    font-weight: bold;
 }
 
 p {
     text-align: right;
-    font-size:smaller;
+    font-size: smaller;
 }

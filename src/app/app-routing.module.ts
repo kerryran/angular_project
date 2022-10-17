@@ -7,13 +7,13 @@ import { TrainingLayoutComponent } from './layouts/training-layout/training-layo
 import { CertificationLayoutComponent } from './layouts/certification-layout/certification-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 
-const routes : Routes = [
-  {path: '', component: HomeLayoutComponent},
-  {path: 'index', component: HomeLayoutComponent},
-  {path : 'heatmap', component: HeatmapLayoutComponent},
-  {path: 'pathway', component: PathwayLayoutComponent},
-  {path: 'training', component: TrainingLayoutComponent},
-  {path: 'certifications', component: CertificationLayoutComponent},
+const routes: Routes = [
+  { path: '', component: HomeLayoutComponent },
+  { path: 'index', component: HomeLayoutComponent },
+  { path: 'heatmap', component: HeatmapLayoutComponent },
+  { path: 'pathway', component: PathwayLayoutComponent },
+  { path: 'training', component: TrainingLayoutComponent },
+  { path: 'certifications', component: CertificationLayoutComponent },
 ];
 
 

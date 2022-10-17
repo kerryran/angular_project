@@ -1,5 +1,16 @@
-<app-second-header> Loading...</app-second-header>
-<app-side-card>Loading...</app-side-card>
-<a routerLink = "/pathway" class="btn btn-primary">Roles</a>
-<a routerLink = "/certifications" class="btn btn-secondary">Skills and Certifications</a>
-<app-info-hover-card >Loading...</app-info-hover-card>
+<body class="container-wrapper">
+    <app-second-header> Loading...</app-second-header>
+    <div class="d-flex justify-content-between flex-wrap">
+        <app-side-card>Loading...</app-side-card>
+        <div class="mx-auto">
+            <app-pathway-card>Loading...</app-pathway-card>
+        </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between">
+        <app-info-hover-card *ngFor="let item of info" job={{item.job}} open={{item.openings}} money={{item.salary}}>
+            Loading...
+        </app-info-hover-card>
+    </div>
+
+</body>
+<app-footer></app-footer>

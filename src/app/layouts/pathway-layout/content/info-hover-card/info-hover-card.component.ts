@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { info_card } from './info-mocklist';
-import { info_model } from './info-model';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-info-hover-card',
@@ -8,15 +7,15 @@ import { info_model } from './info-model';
   styleUrls: ['./info-hover-card.component.css']
 })
 export class InfoHoverCardComponent implements OnInit {
-  info: info_model[] = [];
+  @Input() job: string;
+  @Input() open: string;
+  @Input() money: string;
 
   constructor() {
-    for(var item of info_card) {
-      console.log(item);
-      this.info.push(item);
-    }
+    this.job = "";
+    this.open = "";
+    this.money = "";
   }
-
   ngOnInit(): void {
   }
 

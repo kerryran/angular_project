@@ -1,3 +1,10 @@
+.navbar-light .nav-link {
+    font-size: small;
+    color: black;
+    border-bottom: solid transparent;
+}
 
-
-     
+.navbar-light .nav-link:hover {
+    color: rgb(10, 145, 207);
+    border-bottom: solid rgb(10, 145, 207)
+}

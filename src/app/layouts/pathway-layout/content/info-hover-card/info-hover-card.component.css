@@ -1,0 +1,28 @@
+.card {
+    width: 9rem;
+    height: auto;
+    background-color: rgb(247, 246, 246);
+    margin: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+}
+
+.card-text {
+    font-weight: bold;
+    color: deepskyblue;
+    font-size: medium;
+}
+
+.card-text1 {
+    font-weight: bold;
+    color: coral;
+    font-size: medium;
+}
+
+.card-subtitle {
+    font-size: small;
+}

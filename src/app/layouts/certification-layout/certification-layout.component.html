@@ -1,18 +1,24 @@
-<a routerLink = "/pathway" class="btn btn-primary">Roles</a>
-<a routerLink = "/certifications" class="btn btn-secondary">Skills and Certifications</a>
-<div id="map-key-1" class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item">
-            <div class="circle" style="background-color:#408AE1;"></div> Entry level
-        </li>
-        <li class="pure-menu-item">
-            <div class="circle" style="background-color:#B871AD;"></div> Mid-level
-        </li>
-        <li class="pure-menu-item">
-            <div class="circle" style="background-color:#7FE2C6;"></div> Advanced
-        </li>
-    </ul>
-</div>
-<app-cert-card></app-cert-card>
-<app-job-card></app-job-card>
-<app-skill-card></app-skill-card>
+<body class="container-wrapper">
+    <app-second-header> Loading...</app-second-header>
+    <a routerLink="/pathway" class="btn btn-primary">Roles</a>
+    <a routerLink="/certifications" class="btn btn-secondary">Skills and Certifications</a>
+    <div id="map-key-1" class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                <div class="circle1"></div> Entry level
+            </li>
+            <li class="pure-menu-item">
+                <div class="circle2"></div> Mid-level
+            </li>
+            <li class="pure-menu-item">
+                <div class="circle3"></div> Advanced
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-row justify-content-between">
+        <app-cert-card></app-cert-card>
+        <app-job-card></app-job-card>
+        <app-skill-card></app-skill-card>
+    </div>
+</body>
+<app-footer></app-footer>

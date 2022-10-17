@@ -1,0 +1,17 @@
+body {
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+
+.circle1 {
+    border-radius: 100%;
+    background-color: #408AE1;
+}
+
+.circle2 {
+    background-color: #B871AD;
+}
+
+.circle3 {
+    background-color: #7FE2C6;
+}

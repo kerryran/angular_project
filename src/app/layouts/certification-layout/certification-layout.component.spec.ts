@@ -8,9 +8,9 @@ describe('CertificationLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CertificationLayoutComponent ]
+      declarations: [CertificationLayoutComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CertificationLayoutComponent);
     component = fixture.componentInstance;

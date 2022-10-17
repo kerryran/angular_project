@@ -1,0 +1,16 @@
+body {
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+
+.btn {
+    border: none;
+    margin-top: .3in;
+    font-size: small;
+}
+
+.btn-secondary {
+    background-color: lightgrey;
+    color: black;
+    margin-left: .5in;
+}
