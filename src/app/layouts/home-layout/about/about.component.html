@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <h1 class="header">About this tool</h1>
+    </div>
+    <div class="cards d-flex flex-row justify-content-between">
+        <div class="card" *ngFor="let item of about">
+            <img src={{item.img}} class=" icon" alt="">
+            <p>{{item.text}}</p>
+        </div>
+    </div>
+</div>

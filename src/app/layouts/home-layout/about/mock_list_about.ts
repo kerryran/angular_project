@@ -5,7 +5,7 @@ export const about_card = [
     },
     {
         img: "/assets/search.svg",
-        text: "From May 2021 through April 2022, there were 180,000 openings for Information Security Analysts, but only 141,000 workers currently employed in those positions - an annual talent shortfall of 39,000 workers for cybersecurity's largest job."
+        text: "From October 2021 through September 2022, there were 190,000 openings for Information Security Analysts, but only 141,000 workers currently employed in those positions - an annual talent shortfall of 49,000 workers for cybersecurity's largest job."
     },
     {
         img: "/assets/lock.svg",

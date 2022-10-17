@@ -6,11 +6,12 @@
     margin-right: 15rem;
     margin-left: 15rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .card {
     margin-left: 1rem;
     margin-right: 1rem;
     border: none;
-    width: 30rem;
+    width: 35rem;
 }
