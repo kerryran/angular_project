@@ -7,7 +7,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { AboutComponent } from './layouts/home-layout/about/about.component';
 import { HackGapComponent } from './layouts/home-layout/hack-gap/hack-gap.component';
 import { WhoIsThisComponent } from './layouts/home-layout/who-is-this/who-is-this.component';
-import { ThreePointCardComponent } from './layouts/home-layout/three-point-card/three-point-card.component';
+import { ThreePointCardComponent } from './layouts/home-layout/who-is-this/three-point-card/three-point-card.component';
 import { PdfCardComponent } from './layouts/home-layout/pdf-card/pdf-card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeatmapLayoutComponent } from './layouts/heatmap-layout/heatmap-layout.component';

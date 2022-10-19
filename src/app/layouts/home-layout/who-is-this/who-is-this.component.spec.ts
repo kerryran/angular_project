@@ -8,9 +8,9 @@ describe('WhoIsThisComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhoIsThisComponent ]
+      declarations: [WhoIsThisComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(WhoIsThisComponent);
     component = fixture.componentInstance;

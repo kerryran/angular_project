@@ -1,20 +1,21 @@
 <div class="whoIsThis">
-    <div class="container-fluid">
-      <h2 class = "header text-center">Who is this tool for?</h2>
-      <p class="header-text text-center">
-        CyberSeek can support local employers, educators, guidance and career counselors, students, current workers,
-        policy makers, and other stakeholders as they answer the following questions:
-      </p>
+  <div class="container-fluid">
+    <h2 class="header text-center">Who is this tool for?</h2>
+    <p class="header-text text-center">
+      CyberSeek can support local employers, educators, guidance and career counselors, students, current workers,
+      policy makers, and other stakeholders as they answer the following questions:
+    </p>
 
-      <div class="d-flex flex-row flex-wrap justify-content-center"> 
-        <div *ngFor = "let text of who_thises"> 
-        <app-three-point-card  class = "d-flex card_separator" img = {{text.img}} title = {{text.title}} [text_items] = "text.text_items">
-        Loading...
+    <div class="d-flex flex-row flex-wrap justify-content-center">
+      <div *ngFor="let text of  pt_card">
+        <app-three-point-card class="d-flex card_separator" img={{text.img}} title={{text.title}}
+          [text_items]="text.text_items">
+          Loading...
         </app-three-point-card>
-        </div>
-      
-        <app-pdf-card class = "d-flex card_separator">Loading...</app-pdf-card>
-
       </div>
+
+      <app-pdf-card class="d-flex card_separator">Loading...</app-pdf-card>
+
+    </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-export class who_this_model {
+export class pt_card_model {
     img: string;
     title: string;
     text_items: string[];
@@ -8,6 +8,6 @@ export class who_this_model {
         this.img = img;
         this.title = title;
         this.text_items = text_items;
-   
+
     }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { who_this_card } from './mock_list_master';
-import { who_this_model } from './model_master';
+import { pt_card_model } from './3pt-card-model';
+import { PtCardService } from './pt_card.service';
 
 @Component({
   selector: 'app-who-is-this',
@@ -8,16 +8,19 @@ import { who_this_model } from './model_master';
   styleUrls: ['./who-is-this.component.css']
 })
 export class WhoIsThisComponent implements OnInit {
-  who_thises: who_this_model[] = [];
+  pt_card: pt_card_model[] = [];
 
-  constructor() {
-    for(var who_this of who_this_card) {
-      console.log(who_this);
-      this.who_thises.push(who_this);
-    }
+  constructor(private ptCardService: PtCardService) {
+
   }
-  
+
   ngOnInit(): void {
+    this.ptCardService.getPtCard().subscribe((data: pt_card_model[]) => {
+      for (var x of data) {
+        console.log(x);
+        this.pt_card.push(x);
+      }
+    })
   }
 
 }
