@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { about_model } from './model_about';
-import { about_card } from './mock_list_about';
+import { about_model } from './about_model';
+import { AboutService } from './about.service';
 
 @Component({
   selector: 'app-about',
@@ -10,14 +10,17 @@ import { about_card } from './mock_list_about';
 export class AboutComponent implements OnInit {
   about: about_model[] = [];
 
-  constructor() {
-    for(var item of about_card) {
-      console.log(item);
-      this.about.push(item);
-    }
+  constructor(private aboutService: AboutService) {
+
   }
 
   ngOnInit(): void {
+    this.aboutService.getAbout().subscribe((data: about_model[]) => {
+      for (var x of data) {
+        console.log(x);
+        this.about.push(x);
+      }
+    })
   }
 
 }
