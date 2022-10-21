@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { info_card } from './content/info-hover-card/info-mocklist';
 import { info_model } from './content/info-hover-card/info-model';
+import { InfoService } from './content/info-hover-card/info.service';
 
 @Component({
   selector: 'app-pathway-layout',
@@ -10,13 +10,16 @@ import { info_model } from './content/info-hover-card/info-model';
 export class PathwayLayoutComponent implements OnInit {
   info: info_model[] = [];
 
-  constructor() {
-    for (var item of info_card) {
-      console.log(item);
-      this.info.push(item);
-    }
+  constructor(private infoService: InfoService) {
   }
+
   ngOnInit(): void {
+    this.infoService.getInfo().subscribe((data: info_model[]) => {
+      for (var x of data) {
+        console.log(x);
+        this.info.push(x);
+      }
+    })
   }
 
 }
