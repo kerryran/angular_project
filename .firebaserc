@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "cyberseek-app"
+  },
+  "targets": {
+    "cyberseek-app": {
+      "hosting": {
+        "angular_project": [
+          "cyberseek-app"
+        ]
+      }
+    }
   }
 }

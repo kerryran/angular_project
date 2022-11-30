@@ -1,0 +1,21 @@
+<!--Adds the functionality to add more "About this Tool" cards-->
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addAbout(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Image Path</span>
+                    <input type="text" class="form-control" ngModel name="img">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Description</span>
+                    <input type="text" class="form-control" ngModel name="text">
+                </div>
+
+                <button class="btn btn-dark" type="submit">
+                    Add Card
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

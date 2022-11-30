@@ -1,23 +1,23 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { about_model } from "./about_model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable(
     { providedIn: 'root' }
 )
 
 export class AboutService {
-    private BaseUrl: string = "https://cyberseek-app-default-rtdb.firebaseio.com/"
-    private endPoint: string = "about_card.json"
+    private baseurl: string = "https://cyberseek-app-default-rtdb.firebaseio.com/"
+    private aboutEndPoint = "about_card"
 
-    constructor(private http: HttpClient) {
+    constructor(private db: AngularFireDatabase) {
     }
 
     getAbout() {
-        return this.http.get<about_model[]>(this.BaseUrl + this.endPoint);
+        return this.db.list<about_model>("about_card").valueChanges();
     }
 
-    getOneAbout(index: number) {
-        return this.http.get<about_model[]>(this.BaseUrl + "about_card" + "/" + index + ".json");
+    addAbout(about: about_model) {
+        this.db.list<about_model>("about_card").push(about)
     }
 }

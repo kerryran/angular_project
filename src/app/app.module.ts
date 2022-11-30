@@ -30,6 +30,16 @@ import { ImageCardComponent } from './layouts/home-layout/image-card/image-card.
 import { InfoHoverCardComponent } from './layouts/pathway-layout/content/info-hover-card/info-hover-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './lab6/user-info.component';
+import { AddTextComponent } from './add-text/add-text.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+
+
 
 
 @NgModule({
@@ -60,12 +70,16 @@ import { UserInfoComponent } from './lab6/user-info.component';
     PartnerCardComponent,
     ImageCardComponent,
     InfoHoverCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddTextComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

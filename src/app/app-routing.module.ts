@@ -6,6 +6,7 @@ import { PathwayLayoutComponent } from './layouts/pathway-layout/pathway-layout.
 import { TrainingLayoutComponent } from './layouts/training-layout/training-layout.component';
 import { CertificationLayoutComponent } from './layouts/certification-layout/certification-layout.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { AddTextComponent } from './add-text/add-text.component';
 
 const routes: Routes = [
   { path: '', component: HomeLayoutComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'pathway', component: PathwayLayoutComponent },
   { path: 'training', component: TrainingLayoutComponent },
   { path: 'certifications', component: CertificationLayoutComponent },
+  { path: 'admin', component: AddTextComponent }
 ];
 
 

@@ -3,6 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    projectId: 'cyberseek-app',
+    appId: '1:855202081237:web:cacf013a5460a9e8e9b55c',
+    databaseURL: 'https://cyberseek-app-default-rtdb.firebaseio.com',
+    storageBucket: 'cyberseek-app.appspot.com',
+    apiKey: 'AIzaSyAT94ktWjBIPx_a5KQl8VY_boCNBb0xvnE',
+    authDomain: 'cyberseek-app.firebaseapp.com',
+    messagingSenderId: '855202081237',
+    measurementId: 'G-6KHD77LLER',
+  },
   production: false
 };
 
