@@ -1,7 +1,24 @@
-<div class="row">
+<!--This website doesn't even have a login mechanic-->
+<app-header></app-header>
+<div class="row m-5">
+    <h2>Login</h2>
     <div class="col-12">
-        <form>
-            <span></span>
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email:</span>
+                <input type="text" class="form-control" placeholder="example@mail.com" ngModel name="email" required
+                    email>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Password</span>
+                <input type="password" class="form-control" placeholder="Password" ngModel name="password" required
+                    password minlength="8">
+            </div>
+            <button class="btn btn-dark m-2" type="submit" [disabled]="!authForm.valid" (click)="buttonClicked='Login'">
+                Login</button>
+            <button class="btn btn-dark m-2" type="submit" [disabled]="!authForm.valid"
+                (click)="buttonClicked='SignUp'">
+                Sign up</button>
         </form>
     </div>
 </div>
