@@ -38,6 +38,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -71,7 +72,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
     ImageCardComponent,
     InfoHoverCardComponent,
     UserInfoComponent,
-    AddTextComponent
+    AddTextComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
