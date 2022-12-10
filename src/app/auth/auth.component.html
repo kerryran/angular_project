@@ -1,4 +1,4 @@
-<!--This website doesn't even have a login mechanic-->
+<!--Added message to show login/signup status after having turned in assignment-->
 <app-header></app-header>
 <div class="row m-5">
     <h2>Login</h2>
@@ -11,8 +11,8 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">Password</span>
-                <input type="password" class="form-control" placeholder="Password" ngModel name="password" required
-                    password minlength="8">
+                <input type="password" class="form-control" placeholder="Minimum length of 8" ngModel name="password"
+                    required password minlength="8">
             </div>
             <button class="btn btn-dark m-2" type="submit" [disabled]="!authForm.valid" (click)="buttonClicked='Login'">
                 Login</button>
@@ -20,5 +20,17 @@
                 (click)="buttonClicked='SignUp'">
                 Sign up</button>
         </form>
+        <div *ngIf="statusFlag && clickedLoginFlag">
+            <h3>Success signing in</h3>
+        </div>
+        <div *ngIf="statusFlag && clickedSignUpFlag">
+            <h3>Success signing up</h3>
+        </div>
+        <div *ngIf="!statusFlag && clickedSignUpFlag">
+            <h3>Error: Email is already used</h3>
+        </div>
+        <div *ngIf="!statusFlag && clickedLoginFlag">
+            <h3>Error: Email or password incorrect</h3>
+        </div>
     </div>
 </div>
